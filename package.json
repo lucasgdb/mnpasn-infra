@@ -1,0 +1,17 @@
+{
+  "name": "mnpasn-infra",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Shared Railway infrastructure for the MNPASN bot and admin",
+  "packageManager": "pnpm@11.25.0",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "plan": "railway config plan",
+    "apply": "railway config apply"
+  },
+  "dependencies": {
+    "railway": "^3.11.0"
+  }
+}
