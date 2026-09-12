@@ -27,6 +27,8 @@ Keep every managed resource in this single configuration. Removing a resource
 can schedule its deletion. Do not duplicate this configuration in application repositories.
 Keep secrets as `preserve()` and shared values as resource references such as
 `PostgresV2.env.DATABASE_URL`. Never commit secrets or saved plan artifacts.
+The admin's `WEBHOOK_SECRET` references `mnpasnBot.env.WEBHOOK_SECRET` so it can
+decrypt Telegram bot tokens for signed media previews without duplicating the secret.
 
 ## Application deployments
 

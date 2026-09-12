@@ -72,6 +72,7 @@ export default defineRailway(() => {
       NEXT_TELEMETRY_DISABLED: "1",
       NODE_ENV: "production",
       RAILPACK_NODE_VERSION: "24",
+      WEBHOOK_SECRET: mnpasnBot.env.WEBHOOK_SECRET,
     },
   });
 
